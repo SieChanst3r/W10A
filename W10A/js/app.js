@@ -23,7 +23,11 @@ var tagName = document.getElementsByTagName('h1');
 // parentElement.innerHTML += '<p> "Hello i am a new element."</p>';
 
 //7. create text node
-
+function myFunction() {
+    var para = document.createElement("P");
+    para.innerHTML = "This is a new paragraph B)";
+    document.getElementById("myDIV").appendChild(para);
+}
 
 //8. remove child
 var parent = document.getElementById("parent-Two");
@@ -40,3 +44,4 @@ giraffe.classList.remove("small-image");
 var giraffeTwo = document.getElementById("image-two");
 giraffeTwo.classList.add("image-two");
 giraffeTwo.classList.remove("image-two");
+giraffeTwo.classList.toggle("image-two");
